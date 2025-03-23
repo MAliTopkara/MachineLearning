@@ -1,0 +1,37 @@
+Kodda Kullanılan Kütüphaneler ve Amaçları – Logistic Regression
+
+numpy (np)
+Amaç: Sayısal hesaplamalar ve matris işlemleri için kullanılır.
+Kullanım: Ağırlıkların güncellenmesi, sigmoid ve loss fonksiyonlarının hesaplanması, NumPy dizileriyle verimli veri işleme yapılması.
+
+pandas (pd)
+Amaç: Veri yükleme, düzenleme ve analiz işlemleri için kullanılır.
+Kullanım: CSV dosyasını okumak, eksik verileri doldurmak, kategorik verileri sayısala çevirmek, DataFrame üzerinde işlem yapmak.
+
+matplotlib.pyplot (plt)
+Amaç: Grafik ve görselleştirme işlemleri için kullanılır.
+Kullanım: Eğitim sürecindeki kaybın (loss) çizilmesi, karışıklık matrisinin görsel olarak sunulması.
+
+seaborn (sns)
+Amaç: Gelişmiş ve estetik veri görselleştirmeleri sağlamak.
+Kullanım: Karışıklık matrisini ısı haritası olarak görselleştirmek için kullanılır.
+
+sklearn.metrics.confusion_matrix
+Amaç: Modelin tahmin başarısını ölçmek için karışıklık matrisi oluşturur.
+Kullanım: Gerçek ve tahmin edilen değerler arasındaki doğru/yanlış sınıflamaları gösterir.
+
+sklearn.model_selection.train_test_split
+Amaç: Veri setini eğitim ve test olarak ayırmak.
+Kullanım: %80 eğitim / %20 test ayrımı ile modelin değerlendirilmesini sağlar.
+
+time
+Amaç: Modelin eğitim ve test süresini ölçmek.
+Kullanım: time.time() ile işlemlerin başlama ve bitiş zamanları ölçülerek süre hesaplanır.
+
+sklearn.linear_model.LogisticRegression
+Amaç: Scikit-learn kütüphanesindeki logistic regression algoritmasını kullanmak.
+Kullanım: Modelin oluşturulması, eğitilmesi (fit) ve tahmin yapılması (predict) işlemlerinde kullanılır.
+
+sklearn.metrics.accuracy_score, classification_report
+Amaç: Modelin başarı performansını değerlendirmek.
+Kullanım: Doğruluk (accuracy), precision, recall, F1-score gibi metrikleri verir.
