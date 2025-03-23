@@ -1,0 +1,30 @@
+Kodda Kullanılan Kütüphaneler ve Amaçları
+Bu rapor, makine öğrenmesi laboratuvar çalışmasında kullanılan kütüphaneleri ve her birinin kod içindeki amacını kısaca açıklamaktadır.
+
+1. time
+Amaç: Modelin eğitim ve test sürelerini ölçmek için kullanılır.
+Kullanım: time.time() fonksiyonu ile eğitim ve tahmin süreleri hesaplanmıştır.
+
+2. numpy (np)
+Amaç: Sayısal hesaplamalar ve matris işlemleri için kullanılır.
+Kullanım:Diziler oluşturma ve işlem yapma.Ortalama, varyans ve olasılık hesaplamalarında kullanılmıştır.Gaussian fonksiyonların hesaplanmasında kullanılmıştır.
+
+3. pandas (pd)
+Amaç: Veri yükleme, işleme ve manipüle etme için kullanılır.
+Kullanım:CSV formatındaki veri setini okumak (pd.read_csv()).Eksik verileri doldurmak (fillna()).Veri setinden belirli sütunları almak ve hedef değişkeni belirlemek.
+
+4. matplotlib.pyplot (plt)
+Amaç: Veri görselleştirme ve grafik oluşturmak için kullanılır.
+Kullanım:Karmaşıklık matrisinin görselleştirilmesi.Model performansını daha iyi anlamak için şekil ve renk kodlamalarının kullanılması.
+
+5. sklearn.model_selection (train_test_split)
+Amaç: Veri setini eğitim ve test olarak ayırmak için kullanılır.
+Kullanım:Veri setini %80 eğitim, %20 test olacak şekilde bölmek.Modelin gerçek veri performansını değerlendirmek.
+
+6. sklearn.naive_bayes (GaussianNB)
+Amaç: Scikit-learn kütüphanesindeki Gaussian Naive Bayes sınıflandırma modelini kullanmak.
+Kullanım:Gaussian Naive Bayes modelinin oluşturulması (GaussianNB()).Modelin eğitilmesi (fit()).Modelin test edilmesi (predict()).
+
+7. sklearn.metrics (classification_report, confusion_matrix)
+Amaç: Model performansını değerlendirmek için kullanılır.
+Kullanım:classification_report() ile doğruluk, hassasiyet ve F1 skoru hesaplanmıştır.confusion_matrix() ile karmaşıklık matrisi oluşturulmuştur.
