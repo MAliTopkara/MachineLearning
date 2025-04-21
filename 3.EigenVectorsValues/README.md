@@ -1,4 +1,8 @@
-﻿# **Soru 1 - Matris Manipülasyonu, Özdeğerler ve Özvektörlerin Makine Öğrenmesindeki Rolü**
+3.Laboratuvar Ödevi
+Tek readme dosyası kullanarak soruları açıklamayı düşündüm.
+
+
+ # **Soru 1 - Matris Manipülasyonu, Özdeğerler ve Özvektörlerin Makine Öğrenmesindeki Rolü**
 ## **Matris Manipülasyonu Nedir?**
 Matris manipülasyonu, verilerin matris (satır–sütun) biçiminde işlenmesiyle yapılan temel işlemlerdir: toplama, çarpma, transpoz alma, tersini bulma, dilimleme ve yeniden şekillendirme gibi işlemleri kapsar.
 ## **Özdeğer ve Özvektör Nedir?**
@@ -35,25 +39,39 @@ Uyarılar:
 \- Karmaşık olmayan matrisler için bile sonuç karmaşık dtype ile dönebilir.
 ## **İç Yapısı ve Akışı**
 1\. Python seviyesi (numpy/linalg/\_linalg.py):
-`   `- Kare matris kontrolü
-`   `- Tip dönüşümleri
-`   `- Gufunc çağrısı
+
+- Kare matris kontrolü
+
+- Tip dönüşümleri
+
+- Gufunc çağrısı
+
 
 2\. C seviyesi:
-`   `- NumPy'nin LAPACK wrapper'ı üzerinden LAPACK fonksiyonu çağrılır:
-`       `Gerçek matris → DGEEV
-`       `Karmaşık matris → ZGEEV
+
+- NumPy'nin LAPACK wrapper'ı üzerinden LAPACK fonksiyonu çağrılır:
+
+-Gerçek matris → DGEEV
+
+-Karmaşık matris → ZGEEV
+
 
 3\. LAPACK (Fortran):
-`   `- Hessenberg formuna indirme
-`   `- QR iterasyonu ile özdeğer çıkarma
-`   `- Geri çözümleme ile özvektör üretimi
+
+- Hessenberg formuna indirme
+
+- QR iterasyonu ile özdeğer çıkarma
+
+- Geri çözümleme ile özvektör üretimi
+
 ## **Örnek Kullanım**
 import numpy as np
 
 A = np.array([[4, 2, 2],
-`              `[0, 3, -2],
-`              `[0, 1, 1]], dtype=float)
+
+             [0, 3, -2],
+             
+             [0, 1, 1]], dtype=float)
 
 w, v = np.linalg.eig(A)
 
@@ -70,16 +88,20 @@ w, v = np.linalg.eig(A)
 Bu soruda, 3x3 boyutlu bir matris için hem manuel yöntemle hem de NumPy kütüphanesinin `linalg.eig` fonksiyonu kullanılarak özdeğer ve özvektör hesaplaması yapılmış, sonuçlar karşılaştırılmıştır.
 Kullanılan matris:
 
-`    `A = [[6, 1, -1],
-`         `[0, 7, 0],
-`         `[3, -1, 2]]
+A = [[6, 1, -1],
+
+    [0, 7, 0],
+
+    [3, -1, 2]]
 ## **Manuel Hesaplama Sonuçları**
 Özdeğerler: [7. 5. 3.]
 
 Özvektörler:
 [[ 0.5883,  0.7071,  0.3162],
-` `[ 0.7845,  0.0000, -0.0000],
-` `[ 0.1961,  0.7071,  0.9487]]
+
+[ 0.7845,  0.0000, -0.0000],
+
+[ 0.1961,  0.7071,  0.9487]]
 
 Hesaplama süresi: 0.000518 saniye
 ## **NumPy ile Hesaplama Sonuçları**
@@ -87,8 +109,10 @@ Hesaplama süresi: 0.000518 saniye
 
 Özvektörler:
 [[0.7071, 0.3162, 0.5883],
-` `[0.0000, 0.0000, 0.7845],
-` `[0.7071, 0.9487, 0.1961]]
+
+[0.0000, 0.0000, 0.7845],
+
+[0.7071, 0.9487, 0.1961]]
 
 Hesaplama süresi: 0.000171 saniye
 ## **Karşılaştırma**
