@@ -1,0 +1,13 @@
+Gereken kütüphaneler ve kısa açıklamaları
+
+pandas:           
+Veri okuma, işleme ve DataFrame oluşturma işlemleri için
+
+numpy :            
+Sayısal işlemler ve matris hesaplamaları için (özellikle elle lineer regresyon)
+
+scikit-learn:       
+Hazır makine öğrenmesi modelleri için (örneğin: LinearRegression)
+
+matplotlib:      
+Grafik ve görselleştirme işlemleri için (scatter plot, histogram vs.)
