@@ -66,29 +66,33 @@ Bu, lineer regresyonda en yaygın kullanılan **maliyet (cost) ölçütüdür** 
 
 Her iki model de yaklaşık **4.15**'lik bir MSE değeri vermiştir, bu da modellerin neredeyse aynı doğrulukta tahmin yaptığını gösterir.
 
-Görselleştime:
+## AŞAMA 6: Görselleştirme
 
-Grafikler, oluşturduğumuz linear regression modelinin başarısını ve doğruluğunu görselleştiriyor. Her biri modelin farklı bir yönünü değerlendirir:
+Grafikler, oluşturduğumuz lineer regresyon modellerinin doğruluğunu ve hata dağılımını analiz etmek için kullanılmıştır. Her biri modelin farklı bir yönünü görselleştirir.
 
-Grafikler:
 
-Scikit Learn Kullanılmadan Yapılanlar
+###  Scikit-learn KULLANILMADAN (NumPy ile)
 
-Gerçek Değerler vs Tahmin Edilen Değerler 
+#### Gerçek Değerler vs Tahmin Edilen Değerler
+Modelin tahminlerinin ne kadar doğru olduğunu gösterir. Noktalar kırmızı çizgiye ne kadar yakınsa model o kadar başarılıdır.
 
-![lineerregression1](https://github.com/user-attachments/assets/2646a87c-5aa3-4a32-9702-e2c7d319fbf1)
+![LineerRegression1](https://github.com/user-attachments/assets/2646a87c-5aa3-4a32-9702-e2c7d319fbf1)
 
-Hataların Dağılımı (Residual Histogram)
+#### Hataların Dağılımı (Residual Histogram)
+Tahmin ile gerçek değer arasındaki farkların dağılımını gösterir. Simetrik bir dağılım modelin dengeli olduğunu gösterir.
 
 ![LineerRegression2](https://github.com/user-attachments/assets/63dfa753-7656-4cd7-82fd-7651d2faea4f)
 
-Scikit Learn Kullanarak Yapılanlar
 
-Gerçek Değerler vs Tahmin Edilen Değerler
+###  Scikit-learn KULLANILARAK
 
-![LineeerRegression3](https://github.com/user-attachments/assets/4945ddd0-8d53-413f-a089-6477c572e3bb)
+#### Gerçek Değerler vs Tahmin Edilen Değerler
+Hazır modelin tahmin performansı. Tahmin edilen değerlerin gerçek değerlere olan yakınlığı incelenmiştir.
 
-Hataların Dağılımı
+![LineerRegression3](https://github.com/user-attachments/assets/4945ddd0-8d53-413f-a089-6477c572e3bb)
+
+#### Hataların Dağılımı (Residual Histogram)
+Hazır modelin tahmin hatalarının dağılımı. Hatalar genellikle sıfır etrafında ve simetrikse model başarılı sayılır.
 
 ![LineerRegression4](https://github.com/user-attachments/assets/2d7106da-4cec-4355-876c-c726f3d42d51)
 
