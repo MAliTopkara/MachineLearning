@@ -1,0 +1,19 @@
+KULLANILAN KÜTÜPHANELER NE İŞE YARAR?
+
+numpy: Sayısal hesaplamalar için kullanılan temel kütüphanedir. Çok boyutlu diziler (array) ve matris işlemleri sağlar.
+
+pandas: Veri işleme ve analiz kütüphanesidir. Tablo şeklinde veri yapıları (DataFrame) ile veri manipülasyonu sağlar.
+
+sklearn.datasets: Makine öğrenmesi uygulamaları için örnek veri setleri sağlar (örneğin Iris veri seti).
+
+sklearn.model_selection.train_test_split: Veriyi eğitim ve test setlerine ayırmak için kullanılır.
+
+sklearn.preprocessing.StandardScaler: Veriyi standartlaştırmak (ortalama=0, std=1) için kullanılır. Özellikle sinir ağı gibi modellerde verinin ölçeklenmesi önemlidir.
+
+sklearn.metrics.accuracy_score: Tahmin sonuçlarının doğruluğunu hesaplamak için kullanılır.
+
+sklearn.metrics.confusion_matrix: Sınıflandırma problemlerinde gerçek ve tahmin edilen sınıflar arasındaki ilişkileri tablo halinde gösterir.
+
+matplotlib.pyplot: Grafik ve görselleştirme işlemleri için kullanılan temel kütüphanedir.
+
+seaborn: Matplotlib üzerine kurulmuş, istatistiksel grafikler çizmek için kullanılan gelişmiş bir görselleştirme kütüphanesidir.
