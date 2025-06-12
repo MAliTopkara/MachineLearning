@@ -53,7 +53,7 @@ Model `NeuralNetwork` sınıfı olarak yazılmıştır. Hiçbir hazır makine ö
 
 
 ### Kayıp Eğrisi (Loss vs Epoch)
-
+https://github.com/MAliTopkara/MachineLearning/blob/main/5.ForwardAndBackwardPropagation/labg%C3%B6rsel1.png?raw=true
 
 ##  Eğitim Süreci
 
