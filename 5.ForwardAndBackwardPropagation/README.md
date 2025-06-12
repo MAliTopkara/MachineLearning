@@ -50,7 +50,7 @@ Model `NeuralNetwork` sınıfı olarak yazılmıştır. Hiçbir hazır makine ö
 - **Test Doğruluğu:** ~%96.67
 
 ###  Karmaşıklık Matrisi (Test Seti)
-
+https://github.com/MAliTopkara/MachineLearning/blob/main/5.ForwardAndBackwardPropagation/labg%C3%B6rsel2.png?raw=true
 
 ### Kayıp Eğrisi (Loss vs Epoch)
 https://github.com/MAliTopkara/MachineLearning/blob/main/5.ForwardAndBackwardPropagation/labg%C3%B6rsel1.png?raw=true
